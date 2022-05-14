@@ -12,12 +12,12 @@ if [ ! -f $1 ]; then
     exit 1
 fi
 
-# Start the backup
-echo "Backing up file $FILE_TO_BACKUP to $BACKUP_FILE_NAME"
-
-# Execute backup of the given file
+# Setup the variables
 FILE_TO_BACKUP=$1
 BACKUP_FILE_NAME=$FILE_TO_BACKUP.$(date +%Y-%m-%d_%H-%M-%S)
+
+# Start the backup
+echo "Backing up file $FILE_TO_BACKUP to $BACKUP_FILE_NAME"
 cp $FILE_TO_BACKUP $BACKUP_FILE_NAME || exit 1
 cmp $FILE_TO_BACKUP $BACKUP_FILE_NAME || exit 1
 
