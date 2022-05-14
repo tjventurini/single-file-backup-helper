@@ -7,3 +7,6 @@ fi
 
 # Install backup helper
 wget -O /home/$USER/bin/$BACKUP_HELPER_NAME https://raw.githubusercontent.com/tjventurini/single-file-backup-helper/master/helper.sh
+
+# Make sure the helper is executable
+chmod +x /home/$USER/bin/$BACKUP_HELPER_NAME
