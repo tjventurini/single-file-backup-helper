@@ -5,7 +5,7 @@ This terminal helper is going to help you to quickly backup single files of your
 ## Installation
 
 ```bash
-sh -c "$(wget -qO- https://raw.githubusercontent.com/tjventurini/single-file-backup-helper/master/install.sh)"
+wget -qO- https://raw.githubusercontent.com/tjventurini/single-file-backup-helper/master/install.sh | sudo bash
 ```
 
 ## Usage
