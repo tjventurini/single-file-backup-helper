@@ -9,4 +9,4 @@ fi
 wget -O /home/$USER/bin/$BACKUP_HELPER_NAME https://raw.githubusercontent.com/tjventurini/single-file-backup-helper/master/helper.sh
 
 # Make sure the helper is executable
-chmod u+x /home/$USER/bin/$BACKUP_HELPER_NAME
+# chmod u+x /home/$USER/bin/$BACKUP_HELPER_NAME
