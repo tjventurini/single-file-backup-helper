@@ -15,5 +15,8 @@ fi
 # Execute backup of the given file
 FILE_TO_BACKUP=$1
 BACKUP_FILE_NAME=$FILE_TO_BACKUP.$(date +%Y-%m-%d)
-cp $FILE_TO_BACKUP $BACKUP_FILE_NAME
-cmp $FILE_TO_BACKUP $BACKUP_FILE_NAME
+cp $FILE_TO_BACKUP $BACKUP_FILE_NAME || exit 1
+cmp $FILE_TO_BACKUP $BACKUP_FILE_NAME || exit 1
+
+# Print success message
+echo "Done! 🚀"
