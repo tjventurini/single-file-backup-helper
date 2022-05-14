@@ -8,6 +8,8 @@ This terminal helper is going to help you to quickly backup single files of your
 wget -qO- https://raw.githubusercontent.com/tjventurini/single-file-backup-helper/master/install.sh | sudo bash
 ```
 
+> You can update the helper utility at any time by running this again.
+
 ## Usage
 
 Let's say you want to backup your `/etc/hosts` file. Then you can run the following to do so.
