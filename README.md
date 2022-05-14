@@ -8,6 +8,12 @@ This terminal helper is going to help you to quickly backup single files of your
 wget -qO- https://raw.githubusercontent.com/tjventurini/single-file-backup-helper/master/install.sh | sudo bash
 ```
 
+If you want to change the untility name from `backup` to something else, you can run the following.
+
+```bash
+wget -O /usr/local/bin/BACKUP_HELPER_NAME https://raw.githubusercontent.com/tjventurini/single-file-backup-helper/master/helper.sh
+```
+
 > You can update the helper utility at any time by running this again.
 
 ## Usage
